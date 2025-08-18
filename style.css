@@ -1,0 +1,147 @@
+:root {
+  --body-bg: hsl(235, 21%, 11%);
+  --card-bg: hsl(235, 24%, 19%);
+  --header: hsl(234, 39%, 85%);
+  --Purple-100-hover: hsl(236, 33%, 92%);
+  --Purple-600: hsl(235, 16%, 43%);
+  --Purple-700: hsl(233, 14%, 35%);
+  --Purple-800: hsl(237, 14%, 26%);
+  --task-color: hsl(236, 9%, 61%);
+
+  --all: hsl(220, 98%, 61%);
+  --Check-Background-top: hsl(192, 100%, 67%);
+  --check-bg-bottom: hsl(280, 87%, 65%);
+}
+
+.dark-theme {
+  --card-bg: hsl(0, 0%, 98%);
+  --header: hsl(234, 39%, 85%);
+  --body-bg: hsl(233, 11%, 84%);
+  --Gray-600: hsl(236, 9%, 61%);
+  --task-color: hsl(235, 19%, 35%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(images/bg-mobile-dark.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--body-bg);
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  color: var(--header);
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  font-weight: 700;
+}
+.sun,
+.moon {
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.moon,
+.sunh {
+  display: none;
+}
+
+.moonh {
+  display: block;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 0.8rem;
+  align-items: center;
+}
+
+#input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: var(--task-color);
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  outline: none;
+}
+
+input[type="radio"] {
+  appearance: none;
+  accent-color: transparent;
+  border: 2px solid var(--Purple-600);
+  height: 20px;
+  width: 20px;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  border-radius: 0.8rem;
+}
+
+.card .task-container:last-child {
+  border-bottom: none;
+}
+
+.task-container {
+  display: flex;
+  border-bottom: var(--Purple-600) solid 1px;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.task {
+  color: var(--task-color);
+  font-size: 1.5rem;
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    var(--Check-Background-top),
+    var(--check-bg-bottom)
+  );
+}
