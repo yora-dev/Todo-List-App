@@ -19,6 +19,7 @@
   --body-bg: hsl(233, 11%, 84%);
   --Gray-600: hsl(236, 9%, 61%);
   --task-color: hsl(235, 19%, 35%);
+  background-image: url(images/bg-mobile-light.jpg);
 }
 
 * {
@@ -129,6 +130,10 @@ input[type="radio"] {
   overflow: hidden;
 }
 
+main {
+  min-width: 470px;
+}
+
 .task {
   color: var(--task-color);
   font-size: 1.5rem;
@@ -144,4 +149,22 @@ input[type="radio"] {
     var(--Check-Background-top),
     var(--check-bg-bottom)
   );
+}
+
+@media screen and (min-width: 768px) {
+  .dark-theme {
+    background-image: url(images/bg-desktop-light.jpg);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-image: url(images/bg-desktop-dark.jpg);
+  }
+
+  main {
+    width: 600px;
+  }
 }
