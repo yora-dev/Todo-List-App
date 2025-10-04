@@ -37,8 +37,8 @@ _(Replace this with an actual screenshot of your project. You can capture it usi
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/todo-list-with-theme-changing-functionality-Le2srEu4n5
+- Live Site URL: https://todo-list-app-azure-two.vercel.app/
 
 ## My process
 
