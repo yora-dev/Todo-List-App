@@ -26,7 +26,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.35s;
 }
 
 html {
@@ -39,7 +40,6 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: var(--body-bg);
-  font-family: "Josefin Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
