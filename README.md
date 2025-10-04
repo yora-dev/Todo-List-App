@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.jpg)
 
 _(Replace this with an actual screenshot of your project. You can capture it using your browser’s screenshot tool or FireShot.)_
 
